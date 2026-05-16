@@ -65,7 +65,7 @@ RFM segmentation of 3,263 customers into 7 groups — Champions, Loyal Customers
 Retention heatmap showing how each monthly cohort behaves over 7 periods. December cohort maintains 35–40% retention across all months. Newer cohorts drop sharply after month 1.
 
 ### Page 4 — Marketing Performance
-![Marketing Performance] ![alt text](Result_Screenshots(Looker_Studio)/04_marketing_performance.png)
+![alt text](Result_Screenshots(Looker_Studio)/04_marketing_performance.png)
 Email funnel (104.9k sent → 64.8k opened → 29.3k clicked), campaign performance table with Open Rate and CTOR, and A/B test results comparing Checkout Variant A vs B.
 
 ---
