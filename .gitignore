@@ -1,0 +1,17 @@
+# Environment
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Data (zu gross fuer GitHub)
+data/data_300k.csv
+data/data_enriched_fixed.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
