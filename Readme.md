@@ -152,58 +152,6 @@ ecommerce-intelligence-suite/
 
 ---
 
-## Setup
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/JWenger007/ecommerce-intelligence-suite.git
-cd ecommerce-intelligence-suite
-```
-
-### 2. Create and activate conda environment
-```bash
-conda create -n ecommerce-suite python=3.11
-conda activate ecommerce-suite
-pip install -r requirements.txt
-```
-
-### 3. Configure environment variables
-```bash
-cp .env.example .env
-# Open .env and add your PostgreSQL credentials
-```
-
-### 4. Generate enriched dataset
-```bash
-python python/01_data_generation.py
-```
-
-### 5. Set up PostgreSQL
-- Create database `ecommerce_suite` in pgAdmin
-- Run `sql/01_schema.sql` in VS Code with SQLTools
-- Import `data/data_enriched_fixed.csv` into `fact_orders` via pgAdmin Import/Export
-
-### 6. Run SQL analyses in order
-```
-sql/02_rfm.sql
-sql/03_cohort.sql
-sql/04_ab_test.sql
-sql/05_email_funnel.sql
-```
-
-### 7. Run churn model
-```bash
-python python/02_churn_model.py
-```
-
-### 8. Automate with Google AppScript
-- Upload result CSVs to a Google Drive folder
-- Open a Google Sheet → Extensions → Apps Script
-- Paste `appscript/data_loader.gs` and set your `FOLDER_ID`
-- Run `loadAllCSVsToSheets` → connect Google Sheet to Looker Studio
-
----
-
 ## Tech Stack
 
 | Layer | Tool |
